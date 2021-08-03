@@ -1,0 +1,219 @@
+<html >
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,viewport-fit=cover">
+    <title>ViceSwap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body translate="no">
+  <div class="app">
+    <div class="header">
+      <div class="left-nav-sec">
+        <button class="toggle-icon"><i class="material-icons" >menu</i></button>
+        <a href="#" class="nav-logo">
+          <img class="google-img" alt="google" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"/>
+          <span class="domain">Domains</span>
+        </a>
+      </div>
+      <div class="nav-icons">
+        <a class="nav-icon-link" href="#"><i class="material-icons nav-icon fav-icon" style="font-size:28px;">favorite_border</i></a>
+        <a class="nav-icon-link" href="#"><i class="material-icons nav-icon cart-icon" style="font-size:28px;">shopping_cart</i></a>
+        <a class="nav-icon-link" href="#"><i class="material-icons nav-icon apps-icon" style="font-size:28px;">apps</i></a>
+        <a class="nav-icon-link" href="#"><i class="material-icons nav-icon user-icon" style="font-size:28px;">account_circle</i></a>
+
+
+      </div>
+    </div>
+    <div class="main">
+       <div class="left-column"></div>
+
+       <!-- center column -->
+       <div class="center-column">
+          <div class="center-column-header"></div>
+          <div class="center-column-main">
+
+
+              <div class="search-form sticky">
+                <svg class="search-icon" id="search-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"/><g><path d="M21 19l-5.154-5.154C16.574 12.742 17 11.42 17 10c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7c1.42 0 2.742-.426 3.846-1.154L19 21l2-2zM5 10c0-2.757 2.243-5 5-5s5 2.243 5 5-2.243 5-5 5-5-2.243-5-5z"/></g></svg>
+                <input id="search-input" autocomplete="off" autocorrect="off" autocapitalize="off" type="input" placeholder="Search for a domain or keyword" />
+                <span >
+                  <i class="material-icons close-icon" style="font-size:28px;">tune</i>
+                  <i class="material-icons filter-icon" style="font-size:28px;">close</i>
+                </span>
+              </div>
+
+
+              <div class="search-results is-hidden" id="search-results">
+                <h3 id="results-heading">Available Domains</h3>
+                <div class="card ">
+
+                  <div class="lt-dom">
+                    <span class="check-icon available-icon"><i class="material-icons done-icon" >check_circle</i></span>
+                    <h2 class="domain-name"><span class="search-domain"></span><span class="search-tld">.wordpress.com</span></h2>
+                  </div>
+                  <div class="result-price free rt-dom">
+                    <h4 class="price">£460/year</h4>
+                    <span >
+                      <i class="material-icons favorite-icon res-icon" >favorite_border</i>
+                      <i class="material-icons buy-icon res-icon" >shopping_cart</i>
+                    </span>
+                  </div>
+
+                </div>
+
+                <div class="card ">
+
+                  <div class="lt-dom">
+                    <span class="check-icon unavailable-icon"><i class="material-icons no-icon" >not_interested </i></span>
+                    <h2 class="domain-name"><span class="search-domain"></span><span class="search-tld">.org</span></h2>
+                  </div>
+                  <div class="result-price free rt-dom">
+                    <h4 class="price">Unavailable</h4>
+                    <span >
+                      <i class="material-icons favorite-icon res-icon" >favorite_border</i>
+                      <i class="material-icons nobuy-icon res-icon" >remove_shopping_cart</i>
+                    </span>
+                  </div>
+
+                </div>
+                <div class="card">
+
+                  <div class="lt-dom">
+                    <span class="check-icon unavailable-icon"><i class="material-icons no-icon" >not_interested </i></span>
+                    <h2 class="domain-name"><span class="search-domain"></span><span class="search-tld">.org</span></h2>
+                  </div>
+                  <div class="result-price free rt-dom">
+                    <h4 class="price">Unavailable</h4>
+                    <span >
+                      <i class="material-icons favorite-icon res-icon" >favorite_border</i>
+                      <i class="material-icons nobuy-icon res-icon" >remove_shopping_cart</i>
+                    </span>
+                  </div>
+
+                </div>
+                <div class="card ">
+
+                  <div class="lt-dom">
+                    <span class="check-icon available-icon"><i class="material-icons done-icon" >check_circle</i></span>
+                    <h2 class="domain-name"><span class="search-domain"></span><span class="search-tld">.edu</span></h2>
+                  </div>
+                  <div class="result-price free rt-dom">
+                    <h4 class="price">£570/year</h4>
+                    <span >
+                      <i class="material-icons favorite-icon res-icon" >favorite_border</i>
+                      <i class="material-icons buy-icon res-icon" >shopping_cart</i>
+                    </span>
+                  </div>
+
+                </div>
+
+                <div class="card ">
+
+                  <div class="lt-dom">
+                    <span class="check-icon available-icon"><i class="material-icons done-icon" >check_circle</i></span>
+                    <h2 class="domain-name"><span class="search-domain"></span><span class="search-tld">.me</span></h2>
+                  </div>
+                  <div class="result-price free rt-dom">
+                    <h4 class="price">£430/year</h4>
+                    <span >
+                      <i class="material-icons favorite-icon res-icon" >favorite_border</i>
+                      <i class="material-icons buy-icon res-icon" >shopping_cart</i>
+                    </span>
+                  </div>
+
+                </div>
+
+                <div class="card">
+
+                  <div class="lt-dom">
+                    <span class="check-icon unavailable-icon"><i class="material-icons no-icon" >not_interested </i></span>
+                    <h2 class="domain-name"><span class="search-domain"></span><span class="search-tld">.net</span></h2>
+                  </div>
+                  <div class="result-price free rt-dom">
+                    <h4 class="price">Unavailable</h4>
+                    <span >
+                      <i class="material-icons favorite-icon res-icon" >favorite_border</i>
+                      <i class="material-icons nobuy-icon res-icon" >remove_shopping_cart</i>
+                    </span>
+                  </div>
+
+                </div>
+
+                <div class="card">
+
+                  <div class="lt-dom">
+                    <span class="check-icon unavailable-icon"><i class="material-icons no-icon" >not_interested </i></span>
+                    <h2 class="domain-name"><span class="search-domain"></span><span class="search-tld">.wales</span></h2>
+                  </div>
+                  <div class="result-price free rt-dom">
+                    <h4 class="price">Unavailable</h4>
+                    <span >
+                      <i class="material-icons favorite-icon res-icon" >favorite_border</i>
+                      <i class="material-icons nobuy-icon res-icon" >remove_shopping_cart</i>
+                    </span>
+                  </div>
+
+                </div>
+
+                <div class="card ">
+
+                  <div class="lt-dom">
+                    <span class="check-icon available-icon"><i class="material-icons done-icon" >check_circle</i></span>
+                    <h2 class="domain-name"><span class="search-domain"></span><span class="search-tld">.co.uk</span></h2>
+                  </div>
+                  <div class="result-price free rt-dom">
+                    <h4 class="price">£430/year</h4>
+                    <span >
+                      <i class="material-icons favorite-icon res-icon" >favorite_border</i>
+                      <i class="material-icons buy-icon res-icon" >shopping_cart</i>
+                    </span>
+                  </div>
+
+                </div>
+              
+
+              </div>
+
+
+          </div>
+
+
+
+
+
+
+          <div class="center-column-footer"></div>
+       </div>
+
+    </div>
+    <!-- <div class="right-column">
+    </div> -->
+  </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js'></script>
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  $(document).ready(function() {
+    var stickyTop = $('.sticky').offset().top;
+
+    $(window).scroll(function() {
+      var windowTop = $(window).scrollTop();
+      if (stickyTop < windowTop && $(".center-column-main").height() + $(".center-column-main").offset().top - $(".sticky").height() > windowTop) {
+        $('.sticky').css('position', 'fixed');
+      } else {
+        $('.sticky').css('position', 'relative');
+      }
+    });
+  });
+
+  </script>
+</body>
+</html>
